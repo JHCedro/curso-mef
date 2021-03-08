@@ -1,0 +1,125 @@
+\newcommand{\comment}[1]{}
+\newcommand{\ds}{\displaystyle}
+
+% definitions
+\newcommand{\basis}{\varphi}
+\newcommand{\mult}{\lambda}    % lagrange multiplier
+\newcommand{\Mult}{\bm{\Lambda}}    % lagrange multiplier solutions
+\newcommand{\multt}{\mu}       % lagrange multiplier test function
+% \newcommand{\edges}{\varepsilon^\Omega}
+\newcommand{\edgessymbol}{\mathcal{E}}
+\newcommand{\edges}{{\edgessymbol^\Omega}}
+\newcommand{\edgesinner}{\edgessymbol^\Omega_0}
+\newcommand{\edgesboundary}{{\edgessymbol^\Omega_\Gamma}}
+
+% operators
+\renewcommand{\div}{\mathrm{div}\,}
+\newcommand{\grad}{\nabla}
+\newcommand{\rot}{\text{rot}\,}
+% \DeclareMathOperator{\adj}{adj}
+\newcommand{\erf}{\mathrm{erf}}
+\renewcommand{\d}{\partial}
+\newcommand{\inner}[2]{{\left\langle {#1}, {#2} \right\rangle}}
+\newcommand{\jump}[1]{{\llbracket {#1} \rrbracket}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+
+% spaces
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\Hs}{\mathcal{H}}
+\newcommand{\Ls}{\mathcal{L}}
+\newcommand{\Vs}{\mathcal{V}}
+\newcommand{\Qs}{\mathcal{Q}}
+\newcommand{\Hdiv}{\Hs(\text{div})}
+\newcommand{\Hrot}{\Hs(\text{rot})}
+
+% matrices
+\newcommand{\M}{\mathbf{M}}
+\newcommand{\A}{\mathbf{A}}
+\newcommand{\B}{\mathbf{B}}
+\newcommand{\C}{\mathbf{C}}
+\renewcommand{\H}{\mathbf{H}}
+\renewcommand{\L}{\mathbf{L}}
+\newcommand{\G}{\mathbf{G}}
+\newcommand{\U}{\mathbf{U}}
+\renewcommand{\P}{\mathbf{P}}
+% global matrices
+\renewcommand{\AA}{\tilde{\A}}
+\newcommand{\BB}{\tilde{\B}}
+\newcommand{\CC}{\tilde{\C}}
+\newcommand{\UU}{\tilde{\U}}
+\newcommand{\HH}{\tilde{\H}}
+\newcommand{\K}{\mathbf{K}}
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\F}{\mathbf{F}}
+
+% vectors
+\newcommand{\x}{\mathbf{x}}
+\renewcommand{\u}{\mathbf{u}}
+\renewcommand{\v}{\mathbf{v}}
+\newcommand{\n}{\mathbf{n}}
+
+% integrals over domain
+\newcommand{\intD}[1]{\int_{\Omega} \,{#1}\, \mathrm{d} \x}
+\newcommand{\intDk}[1]{\int_{\Omega_k} \,{#1}\, \mathrm{d} \x}
+\newcommand{\intC}[1]{\int_{\Gamma} \,{#1}\, \mathrm{d} s}
+\newcommand{\intCk}[1]{\int_{\Gamma_k} \,{#1}\, \mathrm{d} s}
+\newcommand{\intCD}[1]{\int_{\Gamma_D} \,{#1}\, \mathrm{d} s}
+\newcommand{\intCN}[1]{\int_{\Gamma_N} \,{#1}\, \mathrm{d} s}
+
+
+
+% multiphase model
+\newcommand{\sa}{S_\alpha}
+\newcommand{\sar}{S_{\alpha r}}
+\newcommand{\ka} {k_\alpha}
+\newcommand{\kra}{k_{r \alpha}}
+\newcommand{\la} {\lambda_\alpha}
+\newcommand{\mua}{\mu_\alpha}
+\newcommand{\fa} {f_\alpha}
+\newcommand{\ua} {\u_\alpha}
+\newcommand{\va} {\v_\alpha}
+\newcommand{\ma} {m_\alpha}
+\newcommand{\rhoa} {\rho_\alpha}
+\newcommand{\Va} {V_\alpha}
+\newcommand{\gradpa} {\gradp_\alpha}
+
+\renewcommand{\k}{\mathbf{k}}
+\newcommand{\lo}{\lambda_{o}}
+\newcommand{\lw}{\lambda_{w}}
+\newcommand{\muo}{\mu_o}
+\newcommand{\muw}{\mu_w}
+\newcommand{\kro}{k_{ro}}
+\newcommand{\krw}{k_{rw}}
+\newcommand{\sw}{S_w}
+\newcommand{\swc}{S_{wc}}
+\newcommand{\sor}{S_{or}}
+\newcommand{\so}{S_o}
+\newcommand{\uo}{u_o}
+\newcommand{\uw}{u_w}
+\newcommand{\gradp}{\nabla p}
+\newcommand{\pc}{p_c}
+\newcommand{\fw}{f_w}
+\newcommand{\fo}{f_o}
+
+
+% unities
+\newcommand{\upsi}{\,\mathrm{psi}}
+\newcommand{\uft}{\,\mathrm{ft}}
+\newcommand{\uPa}{\,\mathrm{Pa}}
+\newcommand{\um}{\,\mathrm{m}}
+
+% fractions utilities
+\newcommand{\pfrac}[2]{\left( \frac{#1}{#2} \right)}			% fraction between parenthesis
+\newcommand{\bfrac}[2]{\left[ \frac{#1}{#2} \right]}			% fraction between brackets
+\newcommand{\diff}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}		% fraction for derivative
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}		% fraction for partial derivative
+
+% coloring
+% \usepackage[dvipsnames]{xcolor}
+\newcommand{\red}[1] {{\color {red}#1}}
+\newcommand{\blue}[1]{{\color{blue}#1}}
+\newcommand{\green}[1]{{\color{PineGreen}#1}}
+\newcommand{\gray}[1]{{\color{gray}#1}}
+\newcommand{\hdline}{{\color{gray} \hdashrule[0.5ex]{\textwidth}{1pt}{1mm}}}
